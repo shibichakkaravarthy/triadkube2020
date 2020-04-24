@@ -1,0 +1,265 @@
+/*yellow grren = 98ce00*/
+/*black = 050505*/
+/*ghost white = F7F7FF*/
+/*Orange = FF9239*/
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600&family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:wght@400;600&display=swap');
+
+@font-face {
+	font-family: 'heading';
+	src: url('./fonts/PROMETHEUS.ttf') format('truetype');
+}
+
+.menu-container {
+	transition: all 0.3s ease;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 10px 0px 15px -10px rgba(0,0,0,0.75);
+	z-index: 99;
+	background-color: #fff;
+	height: 100vh;
+}
+
+.icon-container {
+	display: flex;
+	flex: 3;
+	justify-content: space-around;
+	padding: 10px;
+	flex-direction: column;
+	transition: all 0.3s ease;
+}
+
+.label-container {
+	display: flex;
+	padding: 10px;
+	flex-direction: column;
+}
+
+.icon-wrapper {
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.label-wrapper {
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.icon {
+	font-size: 24px;
+	color: #30B7FB;
+	padding: 5px;
+	border-radius: 5px;
+	transform: scale(1) translate(0, 0);
+	transition: all 0.3s ease;
+}
+
+.label {
+	/*display: none;*/
+	font-size: 14px;
+	transform: scaleX(0);
+	transform-origin: left;
+	width: 0;
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+.icon-wrapper:hover {
+	transform: scale(1.05) translate(1px, -1px);
+	box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.75);
+}
+
+.menu-container:hover .label {
+	width: auto;
+	transform: scaleX(1);
+}
+
+.webpage {
+	flex: 1;
+	margin-left: 74px;
+}
+
+.webcontent {
+	flex: 1;
+	transition: all 0.3s ease;
+	transform: scale(1);
+	background-color: #ff0;
+	font-family: 'heading'
+}
+
+.icon-container:hover .webpage {
+	transform: scaleX(0.5);
+	background-color: #fff;
+}
+
+.pageContainer {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.header {
+	width: 100%;
+	font-family: 'heading';
+	color: rgb(48,183,251);
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-size: 42px;
+}
+
+.hero {
+	background-color: rgb(48,183,251);
+	display: flex;
+	flex-direction: row;
+}
+
+.hero-section {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	background-color: #F7F7FF;
+	color: #98ce00;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.greetings {
+	color: #050505;
+	font-size: 22px;
+	padding: 20px;
+	font-family: 'Titillium Web';
+	font-weight: 600;
+}
+
+.title {
+	padding: 10px;
+}
+
+.title #subtitle {
+	font-size: 14px;
+	color: #30B7FB;
+}
+
+.title #maintitle {
+	font-size: 48px;
+	font-family: 'Baloo Tammudu 2';
+	color: #FF9239;
+}
+
+.typing {
+	margin-top: 15px;
+	font-family: 'Titillium Web';
+	text-transform: uppercase;
+	font-size: 28px;
+	display: flex;
+	justify-content: center;
+	color: #98CE00;
+}
+
+.worksContainer {
+	opacity: 0;
+}
+
+.works {
+	background-color: #F7F7FF;
+	color: #FF9232;
+	font-weight: 1000;
+	padding: 10px;
+	font-size: 24px;
+	transition-property: all;
+	transition-timing-function: ease;
+	opacity: 0;
+}
+
+.buttonContainer {
+	padding: 10px;
+	font-family: 'Titillium Web';
+	margin: 5px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: all 0.5s ease;
+}
+
+.buttonContainer:hover {
+	box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.75);
+}
+
+.cardContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	border-radius: 15px;
+	box-shadow: 1px 1px 15px -5px rgba(0,0,0,0.75);
+	padding: 20px;
+	transition: all 0.4s ease;
+	border: 1px solid #fff;
+}
+
+.cardContainer:hover {
+	transform: translateY(-35px);
+	box-shadow: 1px 50px 15px -15px rgba(0,0,0,0.2);
+	border: 1px solid #eee;
+	/*background-color: #F7F7FF;*/
+}
+
+.cardContainer:hover .cardIconContainer {
+	/*background-color: #F7F7FF;*/
+}
+
+.cardIconContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cardTitleContainer {
+	font-family: 'Titillium Web';
+	font-weight: 600;
+	font-size: 1.5em;
+	padding: 5px;
+}
+
+.cardContentContainer {
+	padding: 10px;
+}
+
+.services-title {
+	font-size: 48px;
+	font-family: 'Titillium Web';
+	text-transform: uppercase;
+	color: #FF9239;
+}
+
+.project-card {
+	width: 20vw;
+	height: 20vw;
+}
+
+.project-title {
+	font-size: 2em;
+	padding: 10px;
+}
+
+.ImgContainer {
+	padding: 5px;
+	width: 100%;
+	height: 100%;
+	margin-top: 30px;
+}
+
+.ImgContainer .image {
+	width: 80%;
+	height: auto;
+	transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+	border-radius: 10px;
+}
